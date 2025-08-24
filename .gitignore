@@ -1,0 +1,147 @@
+# Git Ignore Rules - DbRheo Project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.conda/
+
+# Environment variables (keep .env.example for reference)
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+.emacs.d/
+.sublime-*
+
+# AI Assistant configurations
+.claude/
+.cursor/
+.codeium/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Logs (keep logs directory structure but ignore log files)
+*.log
+logs/*.log
+logs/**/*.log
+!logs/.gitkeep
+
+# Database files (runtime databases, not schema)
+*.db
+*.sqlite
+*.sqlite3
+mydatabase.db
+test.db
+
+# Node.js (for web package)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.yarn/
+.pnp.*
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+out/
+.output/
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# Development and testing data
+sample_data/
+*.xlsx
+*.csv
+!testdata/
+!**/sample_data.json
+
+# Personal/sensitive files
+session.md
+**/session.md
+dependencies_report.txt
+
+# User configuration
+config.yaml
+
+# DbRheo connection configurations
+.dbrheo/
+# 但保留示例配置文件
+!.dbrheo/connections.yaml.example
+
+# SSH keys and certificates (security)
+*.pem
+*.key
+*.crt
+*.cer
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# Database credentials and sensitive configs
+**/credentials.yaml
+**/secrets.yaml
+**/passwords.txt
+
+# Promotion templates (keep private for customization)
+promotion_template_*.md
