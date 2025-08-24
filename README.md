@@ -1,6 +1,6 @@
 # 通用Agent框架使用指南
 
-本框架是一个完全泛用化的Agent开发平台，提供了核心能力和定制接口，让您可以快速构建专属的智能助手。
+本框架是一个完全泛用化的Agent开发平台，提供了核心能力和定制接口。
 
 ## 快速开始
 
@@ -8,9 +8,14 @@
 # 安装依赖
 pip install -r requirements.txt
 
+# 复制环境文件并配置APIkey
+cp .env.example .env
+
 # 启动Agent
 python packages/cli/cli.py
 ```
+
+*注意，不推荐使用Claude模型，因为没有做提示词缓存，消耗量太大。
 
 ## 核心定制功能
 
