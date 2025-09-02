@@ -192,6 +192,24 @@ your-project/
 ├── project_tools/       # 自定义工具目录
 │   └── your_tool.py
 ├── .env                 # 环境变量
+├── logs/                # 日志文件目录
+├── requirements.txt     # Python依赖
+├── pyproject.toml       # 项目配置
 └── packages/            # 框架核心（无需修改）
 ```
+
+## 常见问题 FAQ
+
+### Q: 如何调试自定义工具？
+A: 可以在工具的execute方法中添加日志输出，日志会保存在logs目录中。
+
+### Q: 支持哪些AI模型？
+A: 支持OpenAI GPT系列、Claude系列等主流模型，通过DBRHEO_MODEL环境变量配置。
+
+### Q: 如何处理大文件？
+A: 建议使用内置的文件操作工具，支持流式处理和分块读取。
+
+## 贡献指南
+
+欢迎提交Issue和Pull Request来改进这个项目！
 
